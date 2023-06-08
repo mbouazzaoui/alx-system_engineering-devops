@@ -1,21 +1,2 @@
 #!/bin/bash
-
-# Define the directory path
-directory_path="/tmp/my_first_directory"
-
-# Check if directory exists
-if [ -d "$directory_path" ]; then
-    # Attempt to remove the directory
-    echo "Directory exists. Attempting to delete..."
-    rm -rf "$directory_path"
-
-    # Check if deletion was successful
-    if [ ! -d "$directory_path" ]; then
-        echo "Directory successfully deleted."
-    else
-        echo "Failed to delete directory. Please check your permissions."
-    fi
-else
-    echo "Directory does not exist. Nothing to delete."
-
-fi
+rm -rf /tmp/my_first_directory
