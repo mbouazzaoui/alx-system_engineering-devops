@@ -1,0 +1,1 @@
+mod u=rwx,g=rx,o=r hello
